@@ -1,0 +1,76 @@
+<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>bangkit.id | Login</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="expires" content="-1"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="stylesheet" href="bootstrap.min.css"><link rel="stylesheet" href="style.jt.css"><link rel="stylesheet" href="icons.css" type="text/css"/><link rel="stylesheet" href="style.css" type="text/css"/><link rel="stylesheet" href="carousel.css" type="text/css"/><link rel="stylesheet" type="text/css" href="slick/slick.css"><link rel="stylesheet" type="text/css" href="slick/slick-theme.css"><style type="text/css"> *{box-sizing: border-box;}.slider{width: 90%; margin: 20px auto;}.slick-slide{margin: 5px;}.slick-slide img{width: 100%;}.slick-prev:before, .slick-next:before{color: black;}.slick-slide{transition: all ease-in-out .3s; opacity: .7;}.slick-active{opacity: .5;}.slick-current{opacity: 1;}</style><form name="sendin" action="$(link-login-only)" method="post"><input type="hidden" name="username"/><input type="hidden" name="password"/><input type="hidden" name="dst" value="$(link-orig)"/><input type="hidden" name="popup" value="true"/></form><script type="text/javascript" src="/md5.js"></script><script type="text/javascript">function doLogin() {document.sendin.username.value = document.login.username.value;document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');document.sendin.submit();return false;}</script><style media="print">body {display:none}</style></head><body><div class="left"><div id="header" class="row text-center"><div id="loginform" class="col-sm-12 text-center"><div id="main" class="row"><div class="form-info ">
+<div class="informasi-button">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>  
+</div>
+<div class="kolom-info"><div class="informasi"><b>INFO</b></div>
+<div class="slideshow-container">
+	<div class="mySlides fade"><div class="text222"><img src="banner.png" alt="Marhaban Ya Ramadhan 1443" width="100%"></div></div>
+	<div class="mySlides fade"><div class="text222"><i><u>PROMO</u></i><br/> Tukar 10 Voucher 2000 keatas <br/>Gratis 1 Voucher 8 jam </div></div>
+	<div class="mySlides fade"><div class="text222"><b>HOTSPOT BERFUNGSI DENGAN BAIK.<br/> jika ada kendala silahkan hubungi kami</div></div>
+	<div class="mySlides fade"><div class="text222">Untuk hasil terbaik pastikan di tempat anda memiliki sinyal minimal 2 bar <br/>atau 25% </div></div>
+	<div class="mySlides fade"><div class="text222">Pembelian voucher, berlangganan bulanan, kritik dan saran bisa hubungi nomor 085161196126 atau klik tombol chat</div></div>
+	<div class="mySlides fade"><div class="text222">Segala kritik dan saran sangat kami harapkan guna peningkatan kualitas, terima kasih.</div></div>
+</div>
+<script>var slideIndex = 0;showSlides();var slides,dots,timer;function showSlides() {var i;slides = document.getElementsByClassName("mySlides");dots = document.getElementsByClassName("dot");for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";  }slideIndex++;if (slideIndex> slides.length) {slideIndex = 1}for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}slides[slideIndex-1].style.display = "block";  dots[slideIndex-1].className += " active";timer = setTimeout(showSlides, 10000);}function plusSlides(position) {clearTimeout(timer);slideIndex +=position;if (slideIndex> slides.length) {slideIndex = 1}else if(slideIndex<1){slideIndex = slides.length}for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";  }for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}slides[slideIndex-1].style.display = "block";  dots[slideIndex-1].className += " active";timer = setTimeout(showSlides, 7000);}function currentSlide(index){clearTimeout(timer);if (index> slides.length) {index = 1}else if(index<1){index = slides.length}slideIndex = index;for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";  }for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}slides[index-1].style.display = "block";  dots[index-1].className += " active";}</script>    </div></div><div class="form-signin "><div id="fixedd"><div id="content"><img src="logo.png" alt="bangkit.id"></div><div class="tab"><button class="tablinks btn btn-danger btn-arrow-mbr" onclick="openLogin(event, 'UP')" id="userpass"><p id="text-mbr">Member</p></button><button class="tablinks btn btn-danger btn-arrow-qr" onclick="window.location='https://laksa19.github.io/myqr';"><p id="text-qr">QR</p></button><button class="tablinks btn btn-danger btn-arrow-vcr" onclick="openLogin(event, 'KV')" id="kodevoucher"><p id="text-vcr">Voucher</p></button></div><p style="margin-top:45px;"></p><div id="KV" class="tabcontent"><form name="sendinkv" action="$(link-login-only)" method="post"><input type="hidden" name="username" /><input type="hidden" name="password" /><input type="hidden" name="dst" value="$(link-orig)" /><input type="hidden" name="popup" value="true" /></form><script type="text/javascript" src="/md5.js"></script><script type="text/javascript">function doLoginkv() {document.sendinkv.username.value = document.loginkv.usernamekv.value;document.sendinkv.password.value = hexMD5('$(chap-id)' + document.loginkv.passwordkv.value + '$(chap-challenge)');document.sendinkv.submit();return false;}</script><div id="formlogin"><div class="main-menu2"><button class="login2"><a style="color:#59b130" class="login" href="login.html"><b>Login</b></a></button><button class="voucher2"><a style="color:#fff" class="voucher" href="alamat.html"><b>Alamat</b></a></button><button class="service2"><a href="chat/chat.html" style="color:#fff" class="service"><b>Chat</b></a></button></div>  <form autocomplete="off" name="loginkv" action="$(link-login-only)" method="post"$(if chap-id) onSubmit="return doLoginkv()"  > <input type="hidden" name="dst" value="$(link-orig)" /><input type="hidden" name="popup" value="true" /><div id="box-text"><a class="infologin" style="color:#555">Masukan Kode Voucher kemudian klik OK</a></div><b><input style="text-align:left" type="text" class="form-control" name="usernamekv" onchange="updateInput(this.value)" placeholder="Kode voucher" required="required" autocomplete="off"></b>       <input id="pass" name="passwordkv" placeholder="Password" type="hidden"/>		<input name="submit" type="submit" value="OK" class="btn-submit"></form><script type="text/javascript">function updateInput(passwd){document.getElementById("pass").value = passwd;}</script></div></div>      <div id="UP" class="tabcontent"> <form name="sendinup" action="$(link-login-only)" method="post"><input type="hidden" name="username" /><input type="hidden" name="password" /><input type="hidden" name="dst" value="$(link-orig)" /><input type="hidden" name="popup" value="true" /></form><script type="text/javascript" src="/md5.js"></script><script type="text/javascript">function doLoginup() {document.sendinup.username.value = document.loginup.usernameup.value;document.sendinup.password.value = hexMD5('$(chap-id)' + document.loginup.passwordup.value + '$(chap-challenge)');document.sendinup.submit();return false;}</script><div id="formlogin"><div class="main-menu"><button class="login2"><a style="color:#59b130" class="login" href="login.html"><b>Login</b></a></button> <button class="voucher2"><a style="color:#fff" class="voucher" href="alamat.html"><b>Alamat</b></a></button><button class="service2"><a href="chat/chat.html" style="color:#fff" class="service"><b>Chat</b></a></button></div> <form autocomplete="off" name="loginup" action="$(link-login-only)" method="post" onSubmit="return doLoginup()" ><input type="hidden" name="dst" value="$(link-orig)" /><input type="hidden" name="popup" value="true" /><div id="box-text"><a class="infologin" style="color:#555">Masukan Username dan Password kemudian klik OK</a></div><input style="text-align:center" type="text" class="form-control-pw" name="usernameup"  placeholder="Username" required="required" autocomplete="off"></b> <p style=" margin-top:20px"><input type="value"style="text-align:center" class="form-control-pw" placeholder="Password" name="passwordup"required="required" autocomplete="off"></b> </td> <p style=" margin-top:10px"> <input name="submit" type="submit" value="OK" class="btn-submit-pw"></form></div></div><div class="trial-container"><h4></h4><div class="trial-button"><a id="trial" class="small-button" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">COBA GRATIS</a></div></div><div class="daftar-harga"><div class="daftarharga-text-box"><h5></h5><div class="daftarharga-text"><a href="paket.html" style="color: white"><b>DAFTAR PAKET</b></a></div></div>
+<section class="center slider">
+<div>
+<div class="harian"><b>PAKET 2 JAM</b><span class="rupiah"><b>1.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 1 Hari<br/>Kuota : Unlimited</div></div>
+<div>
+<div class="harian"><b>PAKET 4 JAM</b><span class="rupiah"><b>2.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 1 Hari<br/>Kuota : Unlimited</div>
+</div>
+<div>
+<div class="harian"><b>PAKET 6 JAM</b><span class="rupiah"><b>3.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 1 Hari<br/>Kuota : Unlimited</div>
+</div>
+<div>
+<div class="harian"><b>PAKET 8 JAM</b><span class="rupiah"><b>4.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 1 Hari<br/>Kuota : Unlimited</div></div>
+<div>
+<div class="harian2"><b>PAKET 10 JAM</b> <span class="rupiah"><b>5.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 2 Hari<br/>Kuota : Unlimited</div></div>
+<div>
+<div class="harian2"><b>PAKET 12 JAM</b><span class="rupiah"><b>6.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 2 Hari<br/>Kuota : Unlimited</div>
+</div>
+<div>
+<div class="mingguan"><b>PAKET 1 MINGGU</b><span class="rupiah"><b>17.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 7 Hari<br/>Kuota : Unlimited</div>
+</div>
+<div>
+<div class="mingguan"><b>PAKET 2 MINGGU</b><span class="rupiah"><b>30.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 14 Hari<br/>Kuota : Unlimited</div>
+</div>
+<div>
+<div class="bulanan"><b>PAKET 1 BULAN</b><span class="rupiah"><b>50.000,-</b></span></div>
+<div class="detail-paket">Kedaluarsa : 30 Hari<br/>Kuota : Unlimited</div>
+</div>
+<div>
+<div class="bulanan"><b>MEMBER BULANAN</b><span class="rupiah"><b>60.000,-</b></span></div>
+<div class="detail-paket">- Prioritas Utama<br/>- Dapat digunakan bergantian<br/>- Kuota : Unlimited</div>
+</div>
+<div>
+<div class="bulanan"><b>PELANGGAN RUMAHAN</b></div>
+<div class="detail-paket2">- Prioritas Utama<br/>- Dapat digunakan bersama<br/>- Kuota Unlimited<br/>- Sinyal bagus dan stabil<br/>- Harga lebih murah<br/><a href="tel:085892944333"><p style="color:blue;text-decoration:underline;">Lebih lanjut hub. kami</p></a></div>
+</div>
+<div>
+<div class="kuota"><b>PAKET DOWNLOAD</b><span class="rupiah"><b>2.000,-</b></span></div>
+<div class="detail-paket">Aktif : 4 Jam<br/>Kuota : 2 GB<br/>Kedaluarsa : 1 Hari<br/><div class="detail-paket2">"Download lebih cepat"</div></div>
+</div>
+<div>
+<div class="kuota"><b>PAKET DOWNLOAD</b><span class="rupiah"><b>4.000,-</b></span></div>
+<div class="detail-paket">Aktif : 6 Jam<br/>Kuota : 5 GB<br/>Kedaluarsa : 1 Hari<br/><div class="detail-paket2">"Download lebih cepat"</div></div>
+</div>
+</section></div><p style=" margin-top:5px"><marquee ><class="running-text text-info" direction="left" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start() "><font color="red"; style="background-color:white;">CEK PROMO DI BAGIAN INFO <font color="#fff" style="background-color:red;">GUNAKAN INTERNET DENGAN BIJAK</marquee><p style="margin-top:-20px">				</div></div></div></div></div>
+<script>function openLogin(evt, loginName) {var i, tabcontent, tablinks;tabcontent = document.getElementsByClassName("tabcontent");for (i = 0; i < tabcontent.length; i++) {tabcontent[i].style.display = "none";}tablinks = document.getElementsByClassName("tablinks");for (i = 0; i < tablinks.length; i++) {tablinks[i].className = tablinks[i].className.replace(" active", "");}document.getElementById(loginName).style.display = "block";evt.currentTarget.className += " active";}document.getElementById("kodevoucher").click();</script><script language="JavaScript">RrRrRrRr("<cittp=tx/aacit r=j/qeymnj\"<srpsrp ye\"etjvsrp\"sc\"sjur.i.s>/cit>");</script><script type="text/javascript" src="js/jquery.min.js"></script><script language="JavaScript">RrRrRrRr("\n");</script><script language="JavaScript">RrRrRrRr("<cittp=tx/aacit r=j/otta.i.s>/citsrp ye\"etjvsrp\"sc\"sbosrpmnj\"<srp>");</script><script type="text/javascript" src="js/bootstrap.min.js"></script><script language="JavaScript">RrRrRrRr("\n\n");</script></div>
+<script type="text/javascript"><!--
+  document.login.username.focus();
+//--></script><script src="js/jquery.min.js" type="text/javascript"></script><script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script><script type="text/javascript">$(document).on('ready', function() {$(".center").slick({dots: true,infinite: true,centerMode: true,slidesToShow: 1,slidesToScroll: 1,variableWidth: true});$(".lazy").slick({lazyLoad: 'ondemand',infinite: true});});</script><div class="footer"><!-- hargai kerja keras saya (Juni T) dengan tidak menghilangkan kolom di bawah, terima kasih --><b><i><a href="https://www.facebook.com/juniturwanto">Designed by J.T. <br/>Copyright &copy 2021 | Resurrection</a></i></b></div></body></html>
